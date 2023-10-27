@@ -1,0 +1,108 @@
+<?php 
+
+	// include_once('../BackEnd/protect.php')
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/table.css" />
+		<link rel="stylesheet" href="./styles/admPage.css" />
+		<title>Admin Page</title>
+	</head>
+	<body>
+		<div class="adm-page">
+			<h1>Admin Page</h1>
+
+			<form action="" id="news">
+				<h2>Crie uma postagem:</h2>
+
+				<div class="input-group">
+					<label for="nome">Título</label>
+					<input type="text" name="nome" autocomplete="off" />
+				</div>
+
+				<div class="input-group">
+					<label for="sub">Subtítulo</label>
+					<input type="text" name="sub" autocomplete="off" />
+				</div>
+
+				<div class="input-group">
+					<label for="categoria">Categoria</label>
+					<select type="text" name="categoria">
+						<option value="select">Escolha uma opção</option>
+						<option value="Esportes">Esportes</option>
+						<option value="Cotidiano">Cotidiano</option>
+						<option value="Saúde e Bem Estar">Saúde e Bem Estar</option>
+						<option value="Internacionais">Internacionais</option>
+						<option value="Economia">Economia</option>
+					</select>
+				</div>
+
+				<div class="input-group">
+					<label for="conteudo">Conteúdo</label>
+					<textarea name="conteudo" autocomplete="off"></textarea>
+				</div>
+
+				<div class="input-group">
+					<label for="imagem">Imagem</label>
+					<input type="file" id="img" name="Imagem" />
+				</div>
+
+				<div class="input-group">
+					<label for="nameImg">Nome da Imagem</label>
+					<p class="imgLabel">Arraste uma imagem aqui</p>
+					<input type="text" name="nameImg" autocomplete="off" />
+				</div>
+
+				<button type="submit">Criar</button>
+			</form>
+
+			<table>
+				<caption>
+					Suas postagens
+				</caption>
+				<tr>
+					<th data-cell="id">Número da postagem</th>
+					<th data-cell="title">Título</th>
+					<th data-cell="subtitle">Subtítulo</th>
+					<th data-cell="category">Categoria</th>
+					<th data-cell="content">Conteúdo</th>
+					<th data-cell="image">Imagem</th>
+					<th data-cell="imgName">Nome da imagem</th>
+					<th data-cell="actions">Ações</th>
+				</tr>
+
+				<tr>
+					<td>Número da postagem</td>
+					<td>Título</td>
+					<td>Subtítulo</td>
+					<td>Categoria</td>
+					<td>Conteúdo</td>
+					<td>Imagem</td>
+					<td>Nome da imagem</td>
+					<td>
+						<button id="edit">Editar</button>
+						<button id="delete">Excluír</button>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Número da postagem</td>
+					<td>Título</td>
+					<td>Subtítulo</td>
+					<td>Categoria</td>
+					<td>Conteúdo</td>
+					<td>Imagem</td>
+					<td>Nome da imagem</td>
+					<td>
+						<button id="edit">Editar</button>
+						<button id="delete">Excluír</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+div.container {
+	height: 100vh;
+	/* overflow-y: scroll;
+	scroll-snap-type: y ; */
+}
+
+span {
+	color: var(--neutral-400);
+	user-select: none;
+}
+
+span:hover {
+	color: var(--neutral-600);
+}
+
+section {
+	height: 100vh;
+	/* scroll-snap-align: start; */
+}
+
+button {
+	color: var(--neutral-500);
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+a {
+	color: var(--neutral-700);
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 2rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--neutral-500);
+	border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--neutral-700);
+}
+
+:root {
+	/* Neutral Palette: */
+
+	--neutral-50: #fafafa;
+	--neutral-100: #f5f5f5;
+	--neutral-200: #e5e5e5;
+	--neutral-300: #d4d4d4;
+	--neutral-400: #a3a3a3;
+	--neutral-500: #737373;
+	--neutral-600: #525252;
+	--neutral-700: #404040;
+	--neutral-800: #262626;
+	--neutral-900: #171717;
+	--neutral-950: #0a0a0a;
+
+	/* Success Palette: */
+
+	--success-darkest: #065f46;
+	--success-dark: #059669;
+	--success-regular: #22c55e;
+	--success-light: #6ee7b7;
+	--success-extra-light: #a7f3d0;
+
+	/* Error Palette: */
+
+	--error-darkest: #991b1b;
+	--error-dark: #dc2626;
+	--error-regular: #ef4444;
+	--error-light: #f87171;
+	--error-extra-light: #fca5a5;
+	/* Core Palette: */
+}

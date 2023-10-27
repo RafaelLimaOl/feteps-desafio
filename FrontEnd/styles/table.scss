@@ -1,0 +1,47 @@
+div.adm-page {
+	table {
+		background: #3a3a3a;
+		border-collapse: collapse;
+
+		border: 1px solid #3a3a3a;
+
+		caption {
+			margin-bottom: 1rem;
+		}
+
+		th {
+			padding: 1rem;
+			color: rgb(246, 244, 240);
+			background-color: #3a3a3a;
+		}
+
+		td {
+			text-align: center;
+			padding: 0.6rem;
+
+			button#edit {
+				background-color: #1c7293;
+
+				padding: 0.5rem;
+				border-radius: 1rem;
+				color: white;
+			}
+			button#delete {
+				background-color: #c81d25;
+
+				padding: 0.5rem;
+				border-radius: 1rem;
+				color: white;
+			}
+		}
+
+		tr {
+			background-color: rgb(246, 244, 240);
+			&:nth-of-type(3n) {
+				background-color: #d9c291;
+				// background-color: #cfc08a;
+				// background-color: rgb(148, 131, 107);
+			}
+		}
+	}
+}

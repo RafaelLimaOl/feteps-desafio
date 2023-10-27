@@ -1,0 +1,77 @@
+.adm-page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.adm-page form {
+  width: clamp(175px, 40%, 400px);
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.adm-page form .input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.2rem;
+  width: 100%;
+}
+.adm-page form .input-group p {
+  position: absolute;
+  top: -60px;
+  left: 70px;
+  border: 1px dashed;
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+.adm-page form .input-group input {
+  padding: 0.6rem 1rem;
+  background-color: #edf2f5;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
+}
+.adm-page form .input-group input:focus {
+  outline: 1px solid #3a3a3a;
+}
+.adm-page form .input-group select {
+  padding: 0.6rem 0.6rem;
+  background-color: #edf2f5;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
+}
+.adm-page form .input-group #img {
+  opacity: 0;
+  z-index: 2;
+}
+.adm-page form .input-group textarea {
+  padding: 0.6rem 1rem;
+  background-color: #edf2f5;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+.adm-page form button {
+  width: 50%;
+  color: #3a3a3a;
+  background: #e8c258;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+}/*# sourceMappingURL=admPage.css.map */

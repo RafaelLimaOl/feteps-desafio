@@ -1,0 +1,89 @@
+form {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  height: 500px;
+  width: clamp(300px, 25%, 400px);
+  padding: 2rem;
+  border: 2px solid var(--neutral-200);
+  border-radius: 12px;
+}
+form h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+form p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+form div.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+form div.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+form div.inputGroup input {
+  color: var(--neutral-800);
+  background: none;
+  height: 2rem;
+  padding-left: 0.7rem;
+  border: 2px solid var(--neutral-200);
+  border-radius: 16px;
+}
+form div.inputGroup input:focus-visible {
+  border: 3px solid var(--neutral-400);
+  outline: none;
+}
+form div.inputGroup span {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  cursor: pointer;
+}
+form button {
+  color: var(--neutral-100);
+  background: var(--neutral-400);
+  padding: 0.5rem;
+  height: 2.25rem;
+  border-radius: 1rem;
+  transition: all ease-in-out;
+}
+form button:hover {
+  background-color: rgba(115, 115, 115, 0.9);
+}
+form div.error {
+  color: var(--error-darkestk) !important;
+}
+
+div.return {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+div.return a {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+div.return a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--neutral-400);
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+div.return a:hover::after {
+  transform: scaleX(1);
+}/*# sourceMappingURL=form.css.map */
